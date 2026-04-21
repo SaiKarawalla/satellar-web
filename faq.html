@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<link rel="icon" type="image/png" href="favicon.png"/>
+<title>FAQ — SATellar</title>
+<meta name="description" content="Frequently asked questions about SATellar SAT prep app."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:#111827;background:#fff;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit;cursor:pointer}
+.container{max-width:760px;margin:0 auto;padding:0 24px}
+.page-nav{padding:20px 0;border-bottom:1px solid #F3F4F6;margin-bottom:48px}
+.page-nav .inner{max-width:760px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px}
+.page-nav .logo{display:flex;align-items:center;gap:8px;font-size:18px;font-weight:700;color:#111827}
+.page-nav .mark{width:24px;height:24px;border-radius:0;object-fit:cover}
+.page-nav .back{margin-left:auto;font-size:14px;color:#4A6CF7;font-weight:500;transition:opacity .2s}
+.page-nav .back:hover{opacity:.7}
+h1{font-size:36px;font-weight:800;letter-spacing:-.02em;margin-bottom:32px;color:#111827}
+.faq-item{border-bottom:1px solid #E5E7EB;cursor:pointer;transition:background .2s}
+.faq-item:first-child{border-top:1px solid #E5E7EB}
+.faq-item:hover{background:rgba(74,108,247,.02)}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-size:17px;font-weight:600;color:#111827}
+.faq-chevron{font-size:14px;color:#9CA3AF;transition:transform .3s;display:inline-block}
+.faq-chevron.open{transform:rotate(180deg)}
+.faq-a{padding:0 0 20px;font-size:16px;color:#6B7280;line-height:1.7;display:none}
+.faq-a.show{display:block}
+.footer{margin-top:80px;padding:32px 0;border-top:1px solid #F3F4F6;text-align:center;font-size:13px;color:#9CA3AF}
+@media(max-width:600px){h1{font-size:28px}.faq-q{font-size:15px}}
+</style>
+</head>
+<body>
+<nav class="page-nav"><div class="inner"><a href="index.html" class="logo"><img class="mark" src="logo.png" alt="SATellar logo">SATellar</a><a href="index.html" class="back">&larr; Back to home</a></div></nav>
+<div class="container">
+<h1>Frequently Asked Questions</h1>
+<div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Is SATellar actually free to try?</span><span class="faq-chevron">&#9662;</span></div><div class="faq-a">Yes. When you sign up you get 2 free session credits &mdash; spend them on math, english, or combo, your choice. No credit card required. After that, pick Starter, Plus, or Pro to unlock unlimited practice and adaptive features.</div></div>
+<div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>How does the score prediction work?</span><span class="faq-chevron">&#9662;</span></div><div class="faq-a">We track your accuracy, speed, and difficulty level across Math and Reading &amp; Writing. As you complete more sessions, the prediction gets more accurate. It's not a guarantee of your actual SAT score &mdash; it's a realistic estimate based on how you're performing in practice.</div></div>
+<div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>What topics does SATellar cover?</span><span class="faq-chevron">&#9662;</span></div><div class="faq-a">Math: algebra, geometry, trigonometry, statistics, probability, number theory, word problems, and data analysis. English: reading comprehension, vocabulary, grammar, sentence completion, writing &amp; language, and critical reading. All aligned with the Digital SAT format.</div></div>
+<div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>How is this different from Khan Academy or Princeton Review?</span><span class="faq-chevron">&#9662;</span></div><div class="faq-a">SATellar is built specifically for quick, focused daily practice &mdash; not hour-long study sessions. The adaptive system adjusts question difficulty in real time, so you're never wasting time on questions that are too easy or too hard. Plus, the score prediction gives you a concrete number to track, not just a percentage.</div></div>
+<div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Can I use SATellar on Android?</span><span class="faq-chevron">&#9662;</span></div><div class="faq-a">Not yet. We're iOS-only at launch, but Android is coming soon. Check back for the release date.</div></div>
+<div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>How many questions should I do per day?</span><span class="faq-chevron">&#9662;</span></div><div class="faq-a">We recommend 20-30 questions a day, which takes about 15-25 minutes. Consistency matters more than volume &mdash; students who practice daily for 15 minutes typically improve faster than those who cram once a week.</div></div>
+<div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>How do I cancel Pro?</span><span class="faq-chevron">&#9662;</span></div><div class="faq-a">Go to your iPhone Settings &gt; Apple ID &gt; Subscriptions &gt; SATellar and tap Cancel. You keep Pro access until the end of your billing period. No hoops to jump through, no retention screens.</div></div>
+<div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Is my data private?</span><span class="faq-chevron">&#9662;</span></div><div class="faq-a">Yes. We don't sell your data, we don't run ads, and we don't share your information with third parties for marketing. Your practice data is used only to power your score predictions and adaptive practice. Read our full <a href="privacy.html" style="color:#4A6CF7;text-decoration:underline">Privacy Policy</a> for details.</div></div>
+<p style="font-size:11px;color:#C7C7CC;text-align:center;margin-top:40px;line-height:1.6">SAT&reg; is a registered trademark of College Board, which is not affiliated with, and does not endorse, SATellar.</p>
+<div class="footer">&copy; 2026 SATellar. All rights reserved.</div>
+</div>
+<script>
+function toggleFaq(item){var a=item.querySelector('.faq-a'),c=item.querySelector('.faq-chevron'),open=a.classList.contains('show');document.querySelectorAll('.faq-a').forEach(function(el){el.classList.remove('show')});document.querySelectorAll('.faq-chevron').forEach(function(el){el.classList.remove('open')});if(!open){a.classList.add('show');c.classList.add('open')}}
+</script>
+</body>
+</html>
